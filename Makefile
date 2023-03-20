@@ -6,22 +6,23 @@
 #    By: javiersa <javiersa@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/09 19:21:46 by javiersa          #+#    #+#              #
-#    Updated: 2023/03/20 20:26:42 by javiersa         ###   ########.fr        #
+#    Updated: 2023/03/20 21:11:36 by javiersa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = $(SERVER) $(CLIENT)
-SERVER = server.a
-CLIENT = client.a
-SERVER_PROGRAM = server
-CLIENT_PROGRAM = client
+PROGRAMS = $(SERVER_PROGRAM) $(CLIENT_PROGRAM)
 CFLAGS = -Wall -Werror -Wextra
 CC = gcc
 CLEAN = rm -Rf
 LIBFT = Libft
+SERVER = server.a
+CLIENT = client.a
+SERVER_PROGRAM = server
+CLIENT_PROGRAM = client
 SERVER_SRC = src/server.c
-SERVER_OBJS := $(SERVER_SRC:.c=.o)
 CLIENT_SRC = src/client.c
+SERVER_OBJS := $(SERVER_SRC:.c=.o)
 CLIENT_OBJS := $(CLIENT_SRC:.c=.o)
 OBJS = $(SERVER_OBJS) $(CLIENT_OBJS)
 
@@ -35,7 +36,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 clean: libftclean
 	make clean -C $(LIBFT)
-	$(CLEAN) ./$(OBJS)  $(PROGRAM)
+	$(CLEAN) ./$(OBJS)  $(PROGRAMS)
 fclean: libftfclean clean
 	$(CLEAN) ./$(NAME)
 re: fclean all
