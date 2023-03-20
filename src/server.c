@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: javiersa <javiersa@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/02 20:11:35 by javiersa          #+#    #+#             */
-/*   Updated: 2023/03/20 18:23:38 by javiersa         ###   ########.fr       */
+/*   Created: 2023/03/20 18:17:45 by javiersa          #+#    #+#             */
+/*   Updated: 2023/03/20 20:09:54 by javiersa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "../includes/minitalk.h"
 
-# include "libft.h"
-# include <signal.h>
-
-
-#endif
+int	main(void)
+{
+	ft_printf("PID: %d\n", getpid());
+	while (1)
+		pause();
+	return (0);
+}

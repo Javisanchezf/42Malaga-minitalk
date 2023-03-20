@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   client.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: javiersa <javiersa@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/02 20:11:35 by javiersa          #+#    #+#             */
-/*   Updated: 2023/03/20 18:23:38 by javiersa         ###   ########.fr       */
+/*   Created: 2023/03/20 18:17:42 by javiersa          #+#    #+#             */
+/*   Updated: 2023/03/20 20:00:58 by javiersa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "../includes/minitalk.h"
 
-# include "libft.h"
-# include <signal.h>
-
-
-#endif
+int	main(int argc, char **argv)
+{
+	if (argc != 3 || !argv[2][0] || write(1, "", 0) == -1)
+		return (1);
+	
+	return (0);
+}
