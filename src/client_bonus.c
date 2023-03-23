@@ -6,7 +6,7 @@
 /*   By: javiersa <javiersa@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 20:27:12 by javiersa          #+#    #+#             */
-/*   Updated: 2023/03/22 20:01:35 by javiersa         ###   ########.fr       */
+/*   Updated: 2023/03/23 17:50:51 by javiersa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	main(int argc, char **argv)
 		kill(pid, SIGUSR1);
 		usleep(42);
 	}
-	sleep(8);
-	ft_printf("❌ Time out, try other PID or ");
+	usleep(42);
+	ft_printf("❌ Try another PID");
 	return (0);
 }
