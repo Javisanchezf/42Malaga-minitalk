@@ -54,6 +54,11 @@ To compile the library, go to its path and run:
 make
 ```
 
+Or you can compile the bonus part with:
+```
+make bonus
+```
+
 ### 3. Cleaning all binary (.o) executable files (.a) and the program
 
 To delete all files generated with make, go to the path and run:
