@@ -6,11 +6,11 @@
 /*   By: javiersa <javiersa@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 20:27:09 by javiersa          #+#    #+#             */
-/*   Updated: 2023/03/22 19:55:01 by javiersa         ###   ########.fr       */
+/*   Updated: 2023/04/20 18:55:46 by javiersa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minitalk.h"
+#include "minitalk.h"
 
 void	action(int signal, siginfo_t *info, void *context)
 {

@@ -6,11 +6,11 @@
 /*   By: javiersa <javiersa@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 18:17:45 by javiersa          #+#    #+#             */
-/*   Updated: 2023/03/21 20:23:06 by javiersa         ###   ########.fr       */
+/*   Updated: 2023/04/20 18:55:50 by javiersa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minitalk.h"
+#include "minitalk.h"
 
 void	ft_handler(int signal)
 {
